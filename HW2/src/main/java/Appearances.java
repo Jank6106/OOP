@@ -7,6 +7,7 @@ public class Appearances {
 	 * of times in both collections. Static method. (see handout).
 	 * @return number of same-appearance elements
 	 */
+
 	public static <T> int sameCount(Collection<T> a, Collection<T> b) {
 		return 0; // YOUR CODE HERE
 	}

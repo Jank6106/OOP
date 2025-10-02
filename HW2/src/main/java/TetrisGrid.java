@@ -3,13 +3,14 @@
 // a clearRows() capability.
 
 public class TetrisGrid {
-	
+    boolean[][] grid;
 	/**
 	 * Constructs a new instance with the given grid.
 	 * Does not make a copy.
 	 * @param grid
 	 */
 	public TetrisGrid(boolean[][] grid) {
+        this.grid = grid;
 	}
 	
 	
@@ -17,6 +18,7 @@ public class TetrisGrid {
 	 * Does row-clearing on the grid (see handout).
 	 */
 	public void clearRows() {
+        
 	}
 	
 	/**
@@ -24,6 +26,6 @@ public class TetrisGrid {
 	 * @return 2d grid array
 	 */
 	boolean[][] getGrid() {
-		return null; // YOUR CODE HERE
+        return grid;
 	}
 }

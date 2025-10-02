@@ -3,8 +3,9 @@
 // and much is left for you to add.
 
 import org.junit.Test;
+import org.junit.Test;
+import static org.junit.Assert.*;
 
-import static org.junit.Assert.assertEquals;
 
 public class StringCodeTest {
 
@@ -84,5 +85,31 @@ public class StringCodeTest {
 	}
 
 	// Need test cases for stringIntersect
+
+    @Test
+    public void testHasCommonSubstring() {
+        assertTrue(StringCode.stringIntersect("abcfee", "abcnee", 3));
+    }
+
+    @Test
+    public void testNoCommonSubstring() {
+        assertFalse(StringCode.stringIntersect("abc", "xyz", 2));
+    }
+
+    @Test
+    public void testLengthGreaterThanStrings() {
+        assertFalse(StringCode.stringIntersect("hi", "hello", 5));
+    }
+
+    @Test
+    public void testExactMatch() {
+        assertTrue(StringCode.stringIntersect("iopenai", "nopenai", 6));
+    }
+
+    @Test
+    public void testEdgeCaseEmptyStrings() {
+        assertFalse(StringCode.stringIntersect("", "", 1));
+    }
 	
 }
+
